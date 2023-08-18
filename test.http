@@ -1,0 +1,27 @@
+###
+GET http://127.0.0.1:8000
+
+###
+GET http://127.0.0.1:8000/items
+
+###
+PUT   http://127.0.0.1:8000/items/2
+Content-Type: application/json
+
+{
+    "name":"Changed item",
+    "count":10
+}
+
+###
+POST http://127.0.0.1:8000/items
+Content-Type: application/json
+
+{
+    "name":"new item",
+    "count":5
+}
+
+
+###
+DELETE http://127.0.0.1:8000/items/4
